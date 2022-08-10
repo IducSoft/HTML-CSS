@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones y transiciones en CSS</title>
+    <style>
+
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            max-width: auto;
+            
+
+        }
+
+        .btn-modern{
+
+            padding: 10px 15px;
+            border: none;
+            background-color: rgb(252, 126, 126);
+            border-bottom: 3px solid rgb(236, 30, 30);
+            border-radius: 15px;
+            color: white;
+            transition: all .5s ease-in-out;
+        }
+
+        .btn-modern:active{
+
+            border-bottom: none;
+        }
+
+
+        .btn-modern:hover{
+
+            transform: translateY(-5px);
+            box-shadow: 9px 13px 49px 2px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 9px 13px 49px 2px rgba(0,0,0,0.75);
+            -moz-box-shadow: 9px 13px 49px 2px rgba(0,0,0,0.75);
+            background-color: aqua;
+            border-bottom: 3px solid aquamarine;
+            color: black;
+        }
+
+        .btn-modern:hover:active{
+
+            border-bottom: none;
+        }
+
+    </style>
+</head>
+<body>
+    <button class="btn-modern">
+        Esto es un boton
+    </button>
+</body>
+</html>
